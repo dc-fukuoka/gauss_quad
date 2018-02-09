@@ -109,7 +109,7 @@ program main
   else if (order == 1) then
      pf  => f1
      pff => ff1
-     write(6, *) "integration alpha*x + beta*x from a to b"
+     write(6, *) "integration alpha*x + beta from a to b"
      write(6, '(a, 3(1pe14.5))') "alpha, beta, gamma:", alpha, beta
   else if (order == 2) then
      pf  => f2
