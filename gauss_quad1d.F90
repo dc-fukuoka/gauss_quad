@@ -55,7 +55,7 @@ contains
     implicit none
     real(dp),intent(in) :: alpha, beta, gamma
     real(dp),intent(in) :: a, b
-    procedure(func),pointer :: pf => null()
+    procedure(func),pointer,intent(in) :: pf
     real(dp) :: res
 
     res = pf(alpha, beta, gamma, b) - pf(alpha, beta, gamma, a)
