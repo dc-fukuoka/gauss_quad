@@ -5,7 +5,7 @@ this is a study for FEM.
 
 $ make
 $ ./a.out 1
- integration alpha*x + beta*x from a to b
+ integration alpha*x + beta from a to b
 alpha, beta, gamma:   1.00000E+00   1.00000E+00
 a, b:  -4.00000E+00   3.00000E+00
 analytic solution  :   3.50000E+00
