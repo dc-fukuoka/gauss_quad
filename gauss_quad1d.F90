@@ -58,7 +58,7 @@ contains
     res = 0.0d0
     do i = 1, npts
        x = (b-a)/2.0d0*gauss_nodes(i) + (b+a)/2.0d0
-       res = res + (b-a)/2.0d0*weights(i)*(pf(1.0d0, 1.0d0, 1.0d0, x))
+       res = res + (b-a)/2.0d0*weights(i)*(pf(alpha, beta, gamma, x))
     end do
   end function gauss_quad_1d
 end module subs
