@@ -1,14 +1,21 @@
-gaussian quadrature for quadratic fuction.
+gaussian quadrature for linear or quadratic fuction.
 this is a study for FEM.
 
 1D version:
 
 $ make
-$ ./a.out
+$ ./a.out 1
+ integration alpha*x + beta*x from a to b
+alpha, beta, gamma:   1.00000E+00   1.00000E+00
+a, b:  -4.00000E+00   3.00000E+00
+analytic solution  :   3.50000E+00
+gaussian quadrature:   3.50000E+00
+diff:   0.00000E+00
+
+$ ./a.out 2
  integration alpha*x^2 + beta*x + gamma from a to b
 alpha, beta, gamma:   1.00000E+00   1.00000E+00   1.00000E+00
 a, b:  -4.00000E+00   3.00000E+00
 analytic solution  :   3.38333E+01
 gaussian quadrature:   3.38333E+01
 diff:   7.10543E-15
-
